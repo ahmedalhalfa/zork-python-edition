@@ -1,6 +1,9 @@
 import sys
 from modules import animals, events, places, utils
-import data
+
+"""
+this module contains the functions of the places and rooms in the game
+"""
 
 def gold_room_gate():
 
@@ -45,10 +48,10 @@ def diamond_room():
 
     if ans >=0 and ans <= 100 :
         print("after being greedy last time, you have improved and became a better person, Good job!")
-        exit(0)
+        events.go_home()
     elif ans >=101 :
         print("Still the same greedy AF perso, Good job!")
-        exit(0)
+        events.go_home()
     else :
         print("we are not joking reight here !")
         places.diamond_room()

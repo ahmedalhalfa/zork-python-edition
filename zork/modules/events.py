@@ -1,6 +1,9 @@
 import sys
 from modules import animals, events, places, utils
-import data
+
+"""
+this module contains the functions of the events that could happen in the game
+"""
 
 def dead(s):
     print(s)
@@ -9,10 +12,7 @@ def dead(s):
 
 def explore():
 
-    print("""
-        So you have chosen to explore the island of the apes but as the rules tell, you gotta do the objectives first !
-        """)
-    print(" now you face the bear ! Dum dah dum")
+    print(open("data/bear.txt",'r').read())
 
     animals.bear()
 
@@ -24,7 +24,8 @@ def go_home():
 def try_open (ans):
         if ans == "open the door" :
             return True
-
+        else :
+            return False
 def enter() :
 
     print("you are at the gate")

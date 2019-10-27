@@ -1,6 +1,9 @@
 import sys
 from modules import animals, events, places, utils
-import data
+
+"""
+this module contains the functions of the reactions of the animals in the game
+"""
 
 def bear () :
 
@@ -26,7 +29,7 @@ def bear () :
 
 def ape () :
 
-    print(""" you met the guardian ape of the island """)
+    print(open("data/ape.txt",'r').read())
     ans = input("> ")
 
     if ans == "ignore him" :
@@ -41,11 +44,7 @@ def ape () :
 
 def gorilla () :
 
-    print(""" Good job!
-    you have escaped the prison but now you have to face the mighty gorilla
-    the strongest yet cuttiest creature on the island.
-    it has the key to happiness.""")
-
+    print(open("data/gorilla.txt",'r').read())
     ans = input("> ")
 
     if ans == "run" :
@@ -61,7 +60,7 @@ def gorilla () :
         animals.gorilla()
 def lion (keys) :
 
-    print(""" you are facing the lion right now, what you are going to do ? """)
+    print(open("data/lion.txt",'r').read())
     ans = input("> ")
 
     if ans == "run" :

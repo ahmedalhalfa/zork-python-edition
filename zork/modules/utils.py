@@ -1,25 +1,25 @@
 import sys
 from modules import animals, events, places, utils
-import data
+
+"""
+this contains all the utility files that project needs
+"""
 
 def intro() :
 
-        print(
-            """
-            You have arrived at an island in the middle of nowhere in the atalntic sea.
-            it has a panel on its gate saying :
-            welcome to the island of APES, this island lords are apes but it has also many more dangerous creatures so be carful
-            and don't put yourself in danger.
-            So first things first, if you want to enter the island you must firstly move the bear from the gate.
-            """)
+        """
+        loads the game intro
+        """
 
-        print("""
-            so you want to enter or go home ?
-            """)
+        print( open("data/UI_Intro.txt",'r').read())
         ans = input("> ")
         return ans
 
 def start () :
+
+    """
+    starts the game
+    """
 
     ans = utils.intro()
 
