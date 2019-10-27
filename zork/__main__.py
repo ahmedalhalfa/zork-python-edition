@@ -1,6 +1,6 @@
 import sys
 from modules import animals, events, places, utils
-from data import ape, bear, gorilla, lion, UI_Intro
+import data
 
 
 """
