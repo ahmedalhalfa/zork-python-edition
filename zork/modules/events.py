@@ -16,7 +16,7 @@ def explore():
     animals.bear()
 
 def go_home():
-    print("Oh little boy, you don't have the balls to enter, do you? ")
+    print("Oh little boy, you don't have the balls to do it, do you? ")
     exit(0)
 
 def try_open (ans):
@@ -24,4 +24,28 @@ def try_open (ans):
             return True
 
 def enter() :
-      pass
+
+    print("you are at the gate")
+    ans = input("> ")
+
+    if ans == "go 50m left" :
+        animals.ape()
+
+    elif ans == "go 50m right" :
+        animals.lion(False)
+    else :
+        print("no you can't !")
+        events.enter()
+
+def shoot():
+
+    print("you have to shoot her in the right spot")
+    ans = input("> ")
+
+    if ans == "headshot" :
+        print("Good job, the gorilla is dead, the keys are yours")
+        print("Now it's time to fight the lion, the guardian of the happiness")
+        animals.lion(True)
+    else :
+        print("wrong shot, you better run and come later")
+        events.enter()
