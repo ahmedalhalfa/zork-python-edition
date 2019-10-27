@@ -18,7 +18,7 @@ def explore():
 
 def go_home():
     print("Oh little boy, you don't have the balls to do it, do you? ")
-    input("Game finished")
+    input("Game finished and now you can go home ! \n")
     exit(0)
 
 def try_open (ans):
